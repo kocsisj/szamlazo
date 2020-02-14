@@ -34,31 +34,28 @@ if ($email_domain=="gmail.com") {
 	$mail->Port = 587;
 } else {
 // 	ha hamis;
-	$mail->Host     = "kszamla.hu"; // SMTP szerverek  
+	$mail->Host     = "xxxxxx.hu"; // SMTP szerverek  
 	$mail->SMTPSecure = 'ssl';
 	$mail->Port = 465;
 
 	$mail->SMTPAuth = true;                            // SMTP autentikáció bekapcs  
-	$mail->Username = "szamla@kszamla.hu";                         // SMTP felhasználó  
-	$mail->Password = "Hptig6S#HjWL";            // SMTP jelszó 
+	$mail->Username = "szamla@xxxxxx.hu";                         // SMTP felhasználó  
+	$mail->Password = "xxxxxxx";            // SMTP jelszó 
 }
 
 $mail->SetLanguage("hu", "php_mailer/language");    //karakterkódolás hogy legyen ekezetes bető
 $mail->CharSet   = "utf-8";							 //karakterkódolás hogy legyen ekezetes bető
- $mail->From     = "szamla@kszamla.hu";                // Feladó e-mail címe       
+ $mail->From     = "szamla@xxxxxx.hu";                // Feladó e-mail címe       
 //$mail->FromName = "kszamla";     // Feladó neve  
 $mail->FromName = utf8_encode($felhasznalo_nev);
-//$mail->AddAddress("jozsef.kocsis@pontcom.com","Kocsis Jozsef");   // Címzett és neve  
+
 $mail->AddAddress($vevo_email,$vevo_nev);   // Címzett és neve  
-//$mail->AddAddress("ellen@site.com");               // Még egy címzett  
-// $mail->AddBCC("jozsef.kocsis@pontcom.com","Kocsis Jozsef");
-$mail->AddReplyTo("szamla@kszamla.hu","no-reply");  // Válaszlevél ide  
+
+$mail->AddReplyTo("szamla@xxxxxx.hu","no-reply");  // Válaszlevél ide  
 
 $mail->WordWrap = 50;                              // Sortörés állítása  
-//$mail->AddAttachment($directory."/KJ-2016-000133-ppp.pdf"); 
 $mail->AddAttachment($directory."/".$attachement); 
-//$mail->AddAttachment("/var/tmp/file.tar.gz");      // Csatolás  
-//$mail->AddAttachment("/tmp/image.jpg", "new.jpg"); // Csatolás más néven  
+
 $mail->IsHTML(true);                               // Küldés HTML-ként  
 
 $mail->Subject = ("Értesítés ". $szla_sorszam. " sorszámú számla kiállításról");            // A levél tárgya  
