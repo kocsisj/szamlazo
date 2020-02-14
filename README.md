@@ -21,3 +21,10 @@ DATABASE/localhost.sql
 
 ## Felhasználói leírás: 
 [kszamla_felhasznaloi_utmutato.pdf](https://github.com/kocsisj/szamlazoprogram/blob/master/felhasznaloi_utmutato/kszamla_felhasznaloi_utmutato.pdf)
+
+## Képek a programból: 
+![kep1](https://github.com/kocsisj/szamlazoprogram/blob/master/felhasznaloi_utmutato/kep1.jpg)
+
+![kep2](https://github.com/kocsisj/szamlazoprogram/blob/master/felhasznaloi_utmutato/kep2.jpg)
+
+![kep3](https://github.com/kocsisj/szamlazoprogram/blob/master/felhasznaloi_utmutato/kep3.jpg)
