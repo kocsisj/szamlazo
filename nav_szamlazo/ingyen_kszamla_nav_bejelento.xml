@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <nyomtatvanyok xmlns="http://www.apeh.hu/abev/nyomtatvanyok/2005/01">
+  <abev>
+    <hibakszama>0</hibakszama>
+    <hash>275a9205c8f8474370ee3f228ed243948bcfa725</hash>
+    <programverzio>v.2.69.0</programverzio>
+  </abev>
+  <nyomtatvany>
+    <nyomtatvanyinformacio>
+      <nyomtatvanyazonosito>SZAMLAZO</nyomtatvanyazonosito>
+      <nyomtatvanyverzio>3.0</nyomtatvanyverzio>
+      <adozo>
+        <nev>Ingyen kft.</nev>
+        <adoszam>12345678-8-88</adoszam>
+      </adozo>
+        <megjegyzes></megjegyzes>
+    </nyomtatvanyinformacio>
+    <mezok>
+      <mezo eazon="0A0001E001A">12345678-8-88</mezo>
+      <mezo eazon="0A0001E003A">Ingyen kft.</mezo>
+      <mezo eazon="0A0001E004A">8484</mezo>
+      <mezo eazon="0A0001E005A">Nagyalásony</mezo>
+      <mezo eazon="0A0001E006A">Ipari </mezo>
+      <mezo eazon="0A0001E007A">út</mezo>
+      <mezo eazon="0A0001E008A">40</mezo>
+      <mezo eazon="0A0001E009A"></mezo>
+      <mezo eazon="0A0001E010A"></mezo>
+      <mezo eazon="0A0001E011A"></mezo>
+      <mezo eazon="0A0001E012A"></mezo>
+      <mezo eazon="0A0001F002A">1</mezo>
+      <mezo eazon="0A0001F005A">1</mezo>
+      <mezo eazon="0A0001G001A">Nagyalásony</mezo>
+      <mezo eazon="0A0001G002A">20161020</mezo>
+      <mezo eazon="0B0001B001A">1</mezo>
+      <mezo eazon="0B0001B002A">12345678-8-88</mezo>
+      <mezo eazon="0B0001B003A">Ingyen kft.</mezo>
+      <mezo eazon="0B0001E002A">N</mezo>
+      <mezo eazon="0B0001E003A">Kszámla online számlázó program</mezo>
+      <mezo eazon="0B0001E004A">http://kszamla.hu</mezo>
+      <mezo eazon="0B0001E005A">Kocsis József E.V.</mezo>
+      <mezo eazon="0B0001E006A">66931108133</mezo>
+      <mezo eazon="0B0001E009A">20161018</mezo>
+    </mezok>
+  </nyomtatvany>
+</nyomtatvanyok>

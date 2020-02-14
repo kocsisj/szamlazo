@@ -1,0 +1,589 @@
+		.alertify-logs {
+			top: 20px;
+			right: 20px;
+		}
+
+		.ui-datepicker {font-size:11px;}
+
+		.ui-dialog-title{
+			font-size: 14px !important;
+			color: #FFFFFF !important;
+			height:20px;
+		}
+		.ui-dialog-titlebar 
+			{
+				border: 0px;
+				//background: #0073cc;
+				background: #2B2B2B;
+				border-radius: 0;
+
+			}
+		.ui-dialog
+			{
+				border: 1px;
+				border-color: #2B2B2B;
+				background: #F2F5F7;
+				border-radius: 2;
+				box-shadow: 0px 0px 200px #333;
+
+			}
+
+		#telj_datum, #fiz_hatarido
+			{
+				font-size:10pt;
+				height:30px;
+				//width:200px;
+			}
+		#pro_szla_szamla_dialog div { font-size: 14px; }
+
+		input[type=text]  {
+            padding: 10px 4px;    /* doboz mérete */
+            margin: 2px 0px;			/* sorok közti távolság */
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=number] {
+            padding: 10px 4px;    
+            margin: 2px 5px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+			width: 100px;
+			-moz-appearance: textfield;   /* firefox nyilak elrejtése */
+        }
+
+			input:focus, select:focus, textarea:focus { 
+			outline:none;
+			border-color:skyblue;			/* az aktiv input box keretének szine */
+			box-shadow:0 0 10px skyblue;		/* az aktiv input box keretének szine */
+		}
+			
+			/* chrome nyilak elrejtése */
+			::-webkit-inner-spin-button { -webkit-appearance: none;}
+			::-webkit-outer-spin-button { -webkit-appearance: none;}
+		
+	
+		textarea {
+			padding: 10px 4px;    
+            margin: 2px 0px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+
+		}
+        
+		 input[type=password] {
+            padding: 10px 4px;    
+            margin: 2px 5px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+			
+        }
+		
+        input[type=date] {
+            padding: 10px 4px;    
+            margin: 2px 5px;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+            background-color: #389fbd !important; 
+            color: white;
+            padding: 6px 20px;
+            margin: 2px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+			font:normal 15px/22px Arial, Sans-Serif;
+        }
+			
+		input[type=submit]:hover {
+            background-color: #0073cc !important; 
+            color: white;
+            padding: 6px 20px;
+            margin: 2px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+			font:normal 15px/22px Arial, Sans-Serif;
+        }
+
+        button {
+            background-color: #389fbd;
+            color: white;
+            padding: 6px 20px;
+            margin: 4px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+			font:normal 15px/22px Arial, Sans-Serif;
+
+        }
+
+		 button:hover {
+            background-color: #0073cc;    //gomb színe ha az egér rajta van 
+
+			}
+
+        .buttonred {
+            background-color: #F03A3A;
+            color: white;
+            padding: 4px 20px;
+            margin: 0px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+			font:normal 15px/22px Arial, Sans-Serif;
+        }
+
+		 .buttonred:hover {
+            background-color: #F22C2C;   //gomb színe ha az egér rajta van 
+
+			}
+		 .buttongreen {
+            background-color: #009933;
+            color: white;
+            padding: 4px 20px;
+            margin: 0px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+			font:normal 15px/22px Arial, Sans-Serif;
+			
+	//background-image: url(email.png); /* 16px x 16px */
+    //background-color: transparent; /* make the button transparent */
+    //background-repeat: no-repeat;  /* make the background image appear only once */
+    //background-position: 5px 5px;  /* equivalent to 'left top ' */
+    //border: none;           /* assuming we don't want any borders */
+    //cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    //padding-left: 16px;     /* make text start to the right of the image */
+    //vertical-align: middle; /* align the text vertically centered */
+		
+        }
+
+		 .buttongreen:hover {
+            background-color: #00802b;   //gomb színe ha az egér rajta van 
+
+			}
+			
+		a.button {
+            background-color: #389fbd;
+            color: white;
+            padding: 6px 20px;
+            margin: 4px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+			font:normal 15px/22px Arial, Sans-Serif;
+        }
+		
+		a.button_nagy {
+            background-color: #389fbd;
+            color: white;
+            padding: 20px 20px;
+            margin: 4px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+			font:normal 15px/22px Arial, Sans-Serif;
+        }
+
+		a.buttonblue {
+            background-color: #389fbd;
+            color: white;
+            padding: 6px 20px;
+            margin: 4px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+			font:normal 15px/22px Arial, Sans-Serif;
+        }
+
+		a.buttonred {
+            background-color: #F03A3A;
+            color: white;
+            padding: 6px 20px;
+            margin: 4px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+			font:normal 15px/22px Arial, Sans-Serif;
+        }
+
+		a.buttongreen {
+            background-color: #009933;
+            color: white;
+            padding: 6px 20px;
+            margin: 4px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+			font:normal 15px/22px Arial, Sans-Serif;
+        }
+
+		 a.button:hover {
+            background-color: #0073cc;  //gomb színe ha az egér rajta van 
+			color: white !important;
+			padding: 6px 20px;
+            margin: 4px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+			font:normal 15px/22px Arial, Sans-Serif;
+			text-decoration: none;
+			}
+			
+		 a.button_nagy:hover {
+            background-color: #0073cc;  //gomb színe ha az egér rajta van 
+			color: white !important;
+			padding: 20px 20px;
+            margin: 4px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+			font:normal 15px/22px Arial, Sans-Serif;
+			text-decoration: none;
+			}
+			
+		a.buttonred:hover {
+            background-color: #F22C2C;   //gomb színe ha az egér rajta van 
+			color: white !important;
+			padding: 6px 20px;
+            margin: 4px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+			font:normal 15px/22px Arial, Sans-Serif;
+			text-decoration: none;
+			}
+
+		a.buttonblue:hover {
+            background-color: #0073cc;   //gomb színe ha az egér rajta van 
+			color: white !important;
+			padding: 6px 20px;
+            margin: 4px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+			font:normal 15px/22px Arial, Sans-Serif;
+			text-decoration: none;
+			}
+
+		a.buttongreen:hover {
+            background-color: #00802b;   //gomb színe ha az egér rajta van 
+			color: white !important;
+			padding: 6px 20px;
+            margin: 4px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+			font:normal 15px/22px Arial, Sans-Serif;
+			text-decoration: none;
+			}
+
+		a {
+			color: white;
+			}
+		a:hover {
+			color: white !important;
+
+			}
+			
+		a.szla_megnez {
+			color: #389fbd;
+			font-weight: bold;
+			text-decoration: underline;
+			}
+		a.szla_megnez:hover {
+			color: black !important;
+			font-weight: bold;
+			text-decoration: underline;
+
+			}
+		
+        input[type=submit]:hover {
+            background-color: #0073cc; 0073cc  //gomb színe ha az egér rajta van 
+			}
+        
+        div {
+            border-radius: 0px;
+			margin: auto;
+            background-color: #F6F5FA;   //háttérszín
+			padding: 0px;   			//sorok köztis távolság
+			font-style: Arial, Sans-Serif;
+			
+        }
+
+		#oldal_szelesseg {
+				//width: 1024px;
+				width: 1100px;
+				//width: 1280px;
+				padding: 10px;
+				 padding-bottom: 1cm;
+				min-height: 750px;
+			}
+		
+		#menu_szelesseg {
+				//width: 1024px;
+				width: 1120px;
+				//width: 1280px;
+				padding: 1px;
+				border-radius: 0px;
+				border: none;
+				//background-color: #2b2b2b;
+			}
+		
+		#lablec_szelesseg {
+				//width: 1024px;
+				Width: 1120px;
+				padding: 1px;
+				border-radius: 0px;
+				border: none;
+				background-color: #2b2b2b;
+				text-align: center;
+				}
+
+		select {
+			cursor:pointer;
+			padding: 9px 4px;    
+            margin: 2px 2px;
+			display:inline-block;
+			color:grey;
+			border: 1px solid #ccc;
+			width: 8em;
+            border-radius: 4px;
+            box-sizing: border-box;
+		} 
+
+		input[readonly] {  /* For IE */
+			background-color: #F6F5FA;
+			outline: none;
+			border-color: #F6F5FA;
+			 text-align: right;
+			}
+
+		input:-moz-read-only { /* For Firefox */
+			background-color: #F6F5FA;
+			outline: none;
+			border-color: #F6F5FA;
+			 text-align: right;
+		}
+
+		input:read-only { 
+			background-color: #F6F5FA;
+			//outline: none;
+			//border-color: #F6F5FA;
+			 text-align: right;
+		}
+
+
+		input.product[readonly] {  /* For IE */
+			background-color: #f2f2f2;
+			outline: none;
+			//border-color: #F6F5FA;
+			 text-align: left;
+			border: 1px solid #ccc;
+			}
+
+		input.product:-moz-read-only { /* For Firefox */
+			background-color: #f2f2f2;
+			outline: none;
+			//border-color: #F6F5FA;
+			 text-align: left;
+			border: 1px solid #ccc;
+		}
+
+		input.product:read-only { 
+			background-color: #F6F5FA;
+			outline: none;
+			border-color: #F6F5FA;
+			 text-align: left;
+			border: 1px solid #ccc;
+		}
+		
+		body {
+			font-family: Arial, Sans-Serif;
+			font-size: 15px/22px; 
+			margin-top: 0.5em;
+			margin-bottom: 0em;
+			line-height: 25px;
+
+			//background-color: #575757;
+			//background: #575757;
+			//background: -webkit-linear-gradient(left, #575757 , darkgrey); /* For Safari 5.1 to 6.0 */
+			//background: -o-linear-gradient(right, #575757, darkgrey); /* For Opera 11.1 to 12.0 */
+			//background: -moz-linear-gradient(right, #575757, darktgrey); /* For Firefox 3.6 to 15 */
+			//background: linear-gradient(to right, #575757 , darkgrey); /* Standard syntax (must be last) */
+
+			background-color: #CACACA;  //fokepernyő háttérszín
+			background: #CACACA; /* For browsers that do not support gradients */    
+			background: -webkit-linear-gradient(left, #CACACA , #B1B1B1); /* For Safari 5.1 to 6.0 */
+			background: -o-linear-gradient(right, #CACACA, #B1B1B1); /* For Opera 11.1 to 12.0 */
+			background: -moz-linear-gradient(right, #CACACA, #B1B1B1); /* For Firefox 3.6 to 15 */
+			background: linear-gradient(to right, #CACACA , #B1B1B1); /* Standard syntax (must be last) */
+
+			//background: url('pic/kszamla_01_orig.png');
+			//background-repeat: no-repeat;
+			//background-color: #272727;
+			//background-size: 300px;
+			}
+			
+		#narrow {
+			  float: right;
+			  width: 270px;
+			   height: 210px;
+			  //background: lightblue;
+			   border-style: hidden;
+			  border-width: 1px;
+			  border-radius: 0px 0px 0px 0px;
+			    border-color: grey;
+				padding: 5px;
+			}
+		#wide {
+			  float: left;
+			  width: 800px;
+			  height: 210px;
+			  //background: lightgreen;
+			  border-style: hidden ;
+			  border-width: 1px;
+			  border-radius: 0px 0px 0px 0px;
+			  border-color: grey;
+			  padding: 5px;
+			  //text-align-last: justify;
+			  //text-align: justify;
+		}
+
+		label {
+			font-family: Arial, Sans-Serif;
+			font-size: 15px;
+			color: #333;
+			height: 20px;
+			width: 130px;
+			margin-top: 10px;
+			margin-left: 10px;
+			text-align: left;
+			clear: both;
+			float:left;
+			margin-right:15px;
+		}
+		
+		.ui-autocomplete .ui-menu-item { 
+			font-size: 12px;
+			height:20px;
+			//width: 1000px; 
+			width: auto;
+			font-family: Arial, Sans-Serif;
+			}
+			
+		.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+			background: lightblue;  //autocomplet aktice menu hatterstine
+			border: none;
+			color:#000;
+			border-radius:0px;
+			font-weight: normal;
+		}
+		
+		 .divTable
+		{
+			display:  table;
+			width:auto;
+			background-color:#eee;
+			border:0px solid  #666666;
+			border-spacing:0px;/*cellspacing:poor IE support for  this*/
+		   /* border-colmenuse:separate;*/
+		}
+
+		.divRow
+		{
+		   display:table-row;
+		   width:auto;
+		}
+
+		.divCell
+		{
+			float:left;/*fix for  buggy browsers*/
+			display:table-column;
+			width: 150px;
+			height: 40px;
+			line-height: 40px;
+			white-space: nowrap;
+			background-color:#D6EDCE;
+			border: solid;
+			border-color: white;
+			border-width: thin;
+			padding-left: 4px;
+			padding-right: 0px;
+			font-family: Arial, Sans-Serif;
+			font-size: 15px;
+		}
+		.divCell_big
+		
+		{
+			float:left;/*fix for  buggy browsers*/
+			display:table-column;
+			width: 600px;
+			height: 40px;
+			line-height: 40px;
+			white-space: nowrap;
+			text-valign: center;
+			background-color:#D6EDCE;
+			border: solid;
+			border-color: white;
+			border-width: thin;
+			padding-left: 0px;
+			padding-right: 0px;
+			font-family: Arial, Sans-Serif;
+			font-size: 15px;
+		}
+		
+		.divcenter
+		{
+		  text-align:center;
+		}
+		
+		.set-width50 {
+			  width: 55px
+			}
+		.set-width100readonly {
+			  width: 100px;
+			}
+		.set-width100 {
+			  width: 100px;
+			  background:white !important;;
+			  border: 1px solid #ccc !important;;
+			}
+		.set-width150 {
+			  width: 150px;
+			}
+		.set-width200 {
+			  width: 162px;
+			}
+		.set-width300 {
+			  width: 262px;
+			}
+		.set-width330 {
+			  width: 352px;
+			}
+		.set-width350 {
+			  width: 396px;
+			}
+		.set-width440 {
+			  width: 440px;
+			}
+		.set-width {
+			  width: 95px;
+			}
+		.product {
+			  width: 310px;
+			}
+

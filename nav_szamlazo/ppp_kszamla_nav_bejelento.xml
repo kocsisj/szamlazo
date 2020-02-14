@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <nyomtatvanyok xmlns="http://www.apeh.hu/abev/nyomtatvanyok/2005/01">
+  <abev>
+    <hibakszama>0</hibakszama>
+    <hash>275a9205c8f8474370ee3f228ed243948bcfa725</hash>
+    <programverzio>v.2.69.0</programverzio>
+  </abev>
+  <nyomtatvany>
+    <nyomtatvanyinformacio>
+      <nyomtatvanyazonosito>SZAMLAZO</nyomtatvanyazonosito>
+      <nyomtatvanyverzio>3.0</nyomtatvanyverzio>
+      <adozo>
+        <nev>Findigo kereskedelmi Kft</nev>
+        <adoszam>12345678-1-22</adoszam>
+      </adozo>
+        <megjegyzes></megjegyzes>
+    </nyomtatvanyinformacio>
+    <mezok>
+      <mezo eazon="0A0001E001A">12345678-1-22</mezo>
+      <mezo eazon="0A0001E003A">Findigo kereskedelmi Kft</mezo>
+      <mezo eazon="0A0001E004A">2711</mezo>
+      <mezo eazon="0A0001E005A">Tápiószentmárton</mezo>
+      <mezo eazon="0A0001E006A">Hungária</mezo>
+      <mezo eazon="0A0001E007A">utca</mezo>
+      <mezo eazon="0A0001E008A">10</mezo>
+      <mezo eazon="0A0001E009A">1</mezo>
+      <mezo eazon="0A0001E010A">2</mezo>
+      <mezo eazon="0A0001E011A">A</mezo>
+      <mezo eazon="0A0001E012A">4</mezo>
+      <mezo eazon="0A0001F002A">1</mezo>
+      <mezo eazon="0A0001F005A">1</mezo>
+      <mezo eazon="0A0001G001A">Tápiószentmárton</mezo>
+      <mezo eazon="0A0001G002A">20170130</mezo>
+      <mezo eazon="0B0001B001A">1</mezo>
+      <mezo eazon="0B0001B002A">12345678-1-22</mezo>
+      <mezo eazon="0B0001B003A">Findigo kereskedelmi Kft</mezo>
+      <mezo eazon="0B0001E002A">N</mezo>
+      <mezo eazon="0B0001E003A">Kszámla online számlázó program</mezo>
+      <mezo eazon="0B0001E004A">http://kszamla.hu</mezo>
+      <mezo eazon="0B0001E005A">Kocsis József E.V.</mezo>
+      <mezo eazon="0B0001E006A">66931108133</mezo>
+      <mezo eazon="0B0001E009A">20160409</mezo>
+    </mezok>
+  </nyomtatvany>
+</nyomtatvanyok>

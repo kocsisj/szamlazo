@@ -1,0 +1,366 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+.right {
+    right: 0px;
+}
+
+#cssmenu {
+  //font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+  font-family: Arial, Sans-Serif;
+  font-size: 14px;
+  line-height: 25px;
+  text-transform: uppercase;
+  text-align: left;
+}
+#cssmenu > ul {
+  width: auto;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: #4CAF50;    // háttérszín menü
+  border: 1px solid #ece6e8;
+  //border-bottom: 3px solid #d9ced2;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+}
+#cssmenu > ul li#responsive-tab {
+  display: none;
+  /* Hide for large screens */
+
+}
+#cssmenu > ul li {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+#cssmenu > ul li.right {
+  float: right;
+}
+#cssmenu > ul li.has-sub {
+  position: relative;
+}
+#cssmenu > ul li.has-sub:hover ul {
+  display: block;
+}
+#cssmenu > ul li.has-sub ul {
+  display: none;
+  width: 250px;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #4CAF50;    // háttérszín menü
+  border: 1px solid #ece6e8;
+  //border-bottom: 3px solid #d9ced2;
+  border-top: 0 none;
+}
+#cssmenu > ul li.has-sub ul li {
+  display: block;
+}
+#cssmenu > ul li.has-sub > a {
+ // background-image: url('images/caret.png');
+  background-repeat: no-repeat;
+  background-position: 90% -95%;
+}
+#cssmenu > ul li.has-sub > a.active,
+#cssmenu > ul li.has-sub > a:hover {
+ // background: #d80041 url('images/caret.png') no-repeat;
+  background-position: 90% 195%;
+}
+#cssmenu > ul li a {
+  display: block;
+  padding: 12px 24px 11px 24px;
+  text-decoration: none;
+  color: #ffffff;   //betű szine
+  //text-shadow: 0px 1px 0px #fff;
+}
+#cssmenu > ul li a.active,
+#cssmenu > ul li a:hover {
+  background: #d80041;
+  color: #fff;
+  //text-shadow: 0px 1px 0px #000;
+}
+@media (max-width: 600px) {
+  #cssmenu > ul {
+    width: 100%;
+  }
+  #cssmenu > ul li#responsive-tab {
+    display: block;
+  }
+  #cssmenu > ul li#responsive-tab a {
+  //  background: url('images/menu.png') no-repeat;
+    background-position: 95% -35%;
+  }
+  #cssmenu > ul li#responsive-tab a:hover {
+    background-color: #d80041;
+    background-position: 95% 135%;
+  }
+  #cssmenu > ul li {
+    display: none;
+  }
+  #cssmenu > ul li.right {
+    float: none;
+  }
+  #cssmenu > ul li.has-sub {
+    position: relative;
+  }
+  #cssmenu > ul li.has-sub ul {
+    display: block;
+    position: static;
+    width: 100%;
+    background: #ffffff;
+    border: 0 none;
+  }
+  #cssmenu > ul li.has-sub ul li {
+    display: block !important;
+  }
+  #cssmenu > ul li.has-sub ul li a span {
+    display: block;
+    padding-left: 24px;
+  }
+  #cssmenu > ul li.has-sub > a {
+    background-image: none;
+  }
+}
+/* Make sure they show even if hidden in mobile view by JS */
+@media (min-width: 600px) {
+  #cssmenu > ul > li.collapsed {
+    display: inline-block !important;
+    *display: inline;
+    zoom: 1;
+  }
+  #cssmenu > ul ul li.collapsed {
+    display: block !important;
+  }
+}
+// s2
+body {
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    background-color: #fff;
+}
+a {
+    color: #08c;
+    text-decoration: none;
+}
+a:hover {
+    color: #005580;
+    text-decoration: underline;
+}
+
+.row {
+    margin-left: -20px;
+    *zoom: 1;
+}
+.row:before,
+.row:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.row:after { clear: both }
+[class*="span"] {
+    float: left;
+    margin-left: 20px;
+}
+.container,
+.navbar-static-top .container,
+.navbar-fixed-top .container,
+.navbar-fixed-bottom .container { width: 1040px }
+.span13 { width: 1080px }
+.span12 { width: 940px }
+.span11 { width: 860px }
+.span10 { width: 780px }
+.span9 { width: 700px }
+.span8 { width: 620px }
+.span7 { width: 540px }
+.span6 { width: 460px }
+.span5 { width: 380px }
+.span4 { width: 300px }
+.span3 { width: 220px }
+.span2 { width: 140px }
+.span1 { width: 60px }
+.offset12 { margin-left: 980px }
+.offset11 { margin-left: 900px }
+.offset10 { margin-left: 820px }
+.offset9 { margin-left: 740px }
+.offset8 { margin-left: 660px }
+.offset7 { margin-left: 580px }
+.offset6 { margin-left: 500px }
+.offset5 { margin-left: 420px }
+.offset4 { margin-left: 340px }
+.offset3 { margin-left: 260px }
+.offset2 { margin-left: 180px }
+.offset1 { margin-left: 100px }
+.offset0{ margin-left: 0px }
+.row-fluid {
+    width: 100%;
+    *zoom: 1;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    *zoom: 1;
+}
+.container:before,
+.container:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.container:after { clear: both }
+.container-fluid {
+    padding-right: 20px;
+    padding-left: 20px;
+    *zoom: 1;
+}
+.container-fluid:before,
+.container-fluid:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.container-fluid:after { clear: both }
+
+.page-header {
+    padding-bottom: 9px;
+    margin: 20px 0 30px;
+    border-bottom: 1px solid #eee;
+}
+
+
+table {
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+	font-size: 14px;
+}
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.table th,
+.table td {
+    padding: 4px;
+    line-height: 20px;
+    text-align: left;
+    vertical-align: center;
+    border-top: 1px solid #ddd;
+}
+.table th { font-weight: bold }
+.table thead th { vertical-align: bottom }
+
+.table tr:hover {
+  background-color:#BBF2BB;
+  color:#000;
+}
+
+.table-bordered {
+    border: 1px solid #ddd;
+    border-collapse: separate;
+    *border-collapse: collapse;
+    border-left: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.table-bordered2 {
+	width: 400px;
+    border: 1px solid #ddd;
+    border-collapse: separate;
+    *border-collapse: collapse;
+    border-left: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+.table-bordered th,
+.table-bordered td { border-left: 1px solid #ddd }
+
+.table-bordered2 th,
+.table-bordered2 td { border-left: 1px solid #ddd }
+
+.mini-layout {
+    border: 1px solid #DDD;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.075);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.075);
+    box-shadow: 0 1px 2px rgba(0,0,0,.075);
+    margin-bottom: 20px;
+    padding: 9px;
+}
+
+.pagination {
+    height: 40px;
+    margin: 20px 0;
+
+}
+.pagination ul {
+    display: inline-block;
+    *display: inline;
+    margin-bottom: 0;
+    margin-left: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    *zoom: 1;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+	
+}
+.pagination li { display: inline }
+.pagination a,
+.pagination span {
+    float: left;
+    padding: 0px 14px;
+    line-height: 38px;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-left-width: 1px;
+	margin-left: 10px;
+	color: #000000;
+}
+.pagination a:hover,
+.pagination .active a,
+.pagination .active span {
+	background-color: #4CAF50;  //aktiv háttere
+	color: #ffffff !important;   //aktiv betű háttárszine amikor az egér rajta van
+	}
+.pagination .active a,
+.pagination .active span {
+    cursor: default;
+	color: #ffffff !important;   //aktiv betű háttárszine 
+}
+.pagination li:first-child a,
+.pagination li:first-child span {
+    border-left-width: 1px;
+    -webkit-border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    border-radius: 3px 0 0 3px;
+
+}
+.pagination li:last-child a,
+.pagination li:last-child span {
+    -webkit-border-radius: 0 3px 3px 0;
+    -moz-border-radius: 0 3px 3px 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.pagination .disabled span,
+.pagination .disabled a,
+.pagination .disabled a:hover {
+    color: #999;
+    cursor: default;
+    background-color: transparent;
+}
