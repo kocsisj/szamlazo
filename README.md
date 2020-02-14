@@ -20,4 +20,4 @@ Jelszó:         1
 DATABASE/localhost.sql
 
 ## Felhasználói leírás: 
-felhasznaloi_utmutato/kszamla_felhasznaloi_utmutato.pdf
+![alt text](https://github.com/kocsisj/szamlazoprogram/blob/master/felhasznaloi_utmutato/kszamla_felhasznaloi_utmutato.pdf)
