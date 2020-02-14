@@ -12,7 +12,7 @@ Felhasználónév: proba
 
 Jelszó:         1
 
-| Felhasználónév     | proba      |
+| Felhasználónév:     | proba      |
 |------------|-------------|
 | Jelszó: | 1 |
 
