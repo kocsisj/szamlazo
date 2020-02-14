@@ -11,9 +11,9 @@ Esetleg hozzárakhatja a hiányzó kódot a NAV online számlaküldéshez
 http://jozko.com/szamla/szamla.php
 
 
-| Felhasználónév:     | proba      |
-|------------|-------------|
-| Jelszó: | 1 |
+| Felhasználónév:      | proba      |
+|-------------|-------------|
+| Jelszó:  | 1 |
 
 ## Adatbázis: 
 DATABASE/localhost.sql
