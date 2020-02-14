@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Output</title>
+<link type="text/css" rel="stylesheet" href="fpdf.css">
+</head>
+<body>
+<h1>Output</h1>
+<code><b>string</b> Output([<b>string</b> dest [, <b>string</b> name [, <b>boolean</b> isUTF8]]])</code>
+<h2>Leírás</h2>
+Elküldi a dokumentumot a megadottak szerinti végcélba: böngészőbe, fájlba vagy srtingbe. A böngészőbe
+való küldés esetén a beépülő modul kerül használatra vagy a letöltés ("Mentés másként" ablak) lesz
+kikényszerítve.
+<br>
+A függvény először a Close() -t hívja meg és ha szükséges lezárja a dokumentumot.
+<h2>Paraméterek</h2>
+<dl class="param">
+<dt><code>dest</code></dt>
+<dd>
+Végcél ahová a dokumentum elküldésre kerül. Ezen értékek egyikét veheti fel:
+<ul>
+<li><code>I</code>: egyenesen a böngészőbe küldi a dokumentumot. Beépülő modul lesz használva,
+amennyiben elérhető.</li>
+<li><code>D</code>: elküldi a dokumentumot a böngészőnek és kikényszeríti a letöltést. A letöltött fájlnevet
+a <code>name</code> adja meg.</li>
+<li><code>F</code>: elmenti a dokumentumot egy helyi fájlba a <code>name</code> névvel (tartalmazhat
+még elérési utat is a fájlnéven kívül).</li>
+<li><code>S</code>: a dokumentumot egy stingben adja vissza.</li>
+</ul>
+Alapértéke <code>I</code>.
+</dd>
+<dt><code>name</code></dt>
+<dd>
+A fájl neve. Átugrásra kerül, amennyiben a célállomás <code>S</code>.<br>
+Alapértéke <code>doc.pdf</code>.
+</dd>
+<dt><code>isUTF8</code></dt>
+<dd>
+Beállítható, ha a név ISO-8859-1 (<code>false</code>) vagy UTF-8 (<code>true</code>) enkódolású.
+Kizárólag <code>I</code> és <code>D</code> célállomás esetén használható.<br>
+Alapértéke <code>false</code>.
+</dd>
+</dl>
+<h2>Lásd még</h2>
+<a href="close.htm">Close</a>
+<hr style="margin-top:1.5em">
+<div style="text-align:center"><a href="index.htm">Index</a></div>
+</body>
+</html>

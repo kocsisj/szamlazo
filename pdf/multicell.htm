@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MultiCell</title>
+<link type="text/css" rel="stylesheet" href="fpdf.css">
+</head>
+<body>
+<h1>MultiCell</h1>
+<code>MultiCell(<b>float</b> w, <b>float</b> h, <b>string</b> txt [, <b>mixed</b> border [, <b>string</b> align [, <b>boolean</b> fill]]])</code>
+<h2>Leírás</h2>
+Ez a függvény szöveget jelenít meg sortöréssel. A sortörés lehet automatikus (amint a
+szöveg eléri a jobb keretét a cellának) vagy meghatározott ( \n megadásán keresztül).
+Amennyi cella szükséges, annyi kerül megjelenítésre egymás alatt.
+<br>
+A szöveg lehet igazított (balra, jobbra, középre) vagy sorkizárt. A cella blokk lehet keretezett és
+a háttér színes.
+<h2>Paraméterek</h2>
+<dl class="param">
+<dt><code>w</code></dt>
+<dd>
+Cellák szélessége. Ha értéke <code>0</code>, az oldal jobb margójáig terjed a mérete.
+</dd>
+<dt><code>h</code></dt>
+<dd>
+Cellák magassága.
+</dd>
+<dt><code>txt</code></dt>
+<dd>
+Megjelenítendő string.
+</dd>
+<dt><code>border</code></dt>
+<dd>
+A cella blokk körüli keretet jellemzi. Értéke lehet akár szám:
+<ul>
+<li><code>0</code>: nincs keret</li>
+<li><code>1</code>: van keret</li>
+</ul>
+vagy egy string, ami a következő karakterek bármelyikét tartalmazza (tetszőleges sorrendbe):
+<ul>
+<li><code>L</code>: bal</li>
+<li><code>T</code>: fent</li>
+<li><code>R</code>: jobb</li>
+<li><code>B</code>: alul</li>
+</ul>
+Alapérték: <code>0</code>.
+</dd>
+<dt><code>align</code></dt>
+<dd>
+A szöveg igazítását állítja be. Lehetséges értékek:
+<ul>
+<li><code>L</code>: balra igazított</li>
+<li><code>C</code>: középre igazított</li>
+<li><code>R</code>: jobbra igazított</li>
+<li><code>J</code>: sorkizárt (alapérték)</li>
+</ul>
+</dd>
+<dt><code>fill</code></dt>
+<dd>
+A cella hátterét jellemzi, lehet színezett (<code>true</code>) vagy átlátszó (<code>false</code>).<br>
+Alapérték: <code>false</code>.
+</dd>
+</dl>
+<h2>Lásd még</h2>
+<a href="setfont.htm">SetFont</a>,
+<a href="setdrawcolor.htm">SetDrawColor</a>,
+<a href="setfillcolor.htm">SetFillColor</a>,
+<a href="settextcolor.htm">SetTextColor</a>,
+<a href="setlinewidth.htm">SetLineWidth</a>,
+<a href="cell.htm">Cell</a>,
+<a href="write.htm">Write</a>,
+<a href="setautopagebreak.htm">SetAutoPageBreak</a>
+<hr style="margin-top:1.5em">
+<div style="text-align:center"><a href="index.htm">Index</a></div>
+</body>
+</html>

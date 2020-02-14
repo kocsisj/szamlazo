@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AddPage</title>
+<link type="text/css" rel="stylesheet" href="fpdf.css">
+</head>
+<body>
+<h1>AddPage</h1>
+<code>AddPage([<b>string</b> orientation [, <b>mixed</b> size [, <b>int</b> rotation]]])</code>
+<h2>Leírás</h2>
+Egy új oldalt illeszt be a dokumentumba. Ha az oldal már jelen van, előbb a Footer() függvény
+kerül meghívásra a lábléc megjelenítése céljából, majd az új oldal beillesztésre kerül. A
+jelenlegi pozíció a bal felső sarokba ugrik (a felső és a bal margóknak megfelelően) és a
+Header () függvény kerül meghívásra a fejléc megjelenítése miatt.
+<br>
+A függvény hívás előtt beállított betűtípus, automatikusan visszaáll, így nem szükséges
+a SetFont() ismételt meghívása, ha az előbbi betűtípust akarjuk használni. Ugyan ez a helyzet
+a színekkel és a sortávolsággal.
+<br>
+A koordináta rendszer kiinduló pontja a bal felső sarok és a növekvő koordináták lefelé haladnak
+tovább.
+<h2>Paraméterek</h2>
+<dl class="param">
+<dt><code>orientation</code></dt>
+<dd>
+Oldaltájolás. Lehetséges értékek (nem betűméret érzékenyek):
+<ul>
+<li><code>P</code> vagy <code>Portrait</code> - álló</li>
+<li><code>L</code> vagy <code>Landscape</code> - fekvő</li>
+</ul>
+Az alapértelmezett érték az elsőként vezérlőnek átadott érték.
+</dd>
+<dt><code>size</code></dt>
+<dd>
+Oldal méret. A következő értékek valamelyikét veheti fel (nem betűméret érzékenyek):
+<ul>
+<li><code>A3</code></li>
+<li><code>A4</code></li>
+<li><code>A5</code></li>
+<li><code>Letter</code></li>
+<li><code>Legal</code></li>
+</ul>
+vagy egy tömb, ami tartalmazza a szélességet és a magasságot (felhasználó mértékegységében kifejezve).<br>
+<br>
+Az alapértelmezett érték az elsőként vezérlőnek átadott érték.
+</dd>
+<dt><code>rotation</code></dt>
+<dd>
+Az oldal elforgatásának szöge. Csak 90 többszöröse lehet; pozitív érték.
+Óramutató járásával megegyező elforgatás. Alapértéke <code>0</code>.
+</dd>
+</dl>
+<h2>Lásd még</h2>
+<a href="__construct.htm">__construct</a>,
+<a href="header.htm">Header</a>,
+<a href="footer.htm">Footer</a>,
+<a href="setmargins.htm">SetMargins</a>
+<hr style="margin-top:1.5em">
+<div style="text-align:center"><a href="index.htm">Index</a></div>
+</body>
+</html>

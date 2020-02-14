@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AddFont</title>
+<link type="text/css" rel="stylesheet" href="fpdf.css">
+</head>
+<body>
+<h1>AddFont</h1>
+<code>AddFont(<b>string</b> family [, <b>string</b> style [, <b>string</b> file]])</code>
+<h2>Leírás</h2>
+Alkalmaz egy TrueType, OpenType vagy Type1 betűtípust. Az alkalmazás előtt szükséges egy
+betűkészlet definíciós fájlt létrehozni a makefont.php-val.
+<br>
+A definíciós fájlnak (és a betűkészletet tartalmazó fájlnak is) jelen kell lennie a könyvtárban generáláskor,
+különben a folyamat "Could not include font definition file" - "Nem sikerült a betűkészlet beillesztése" hibával
+leáll.
+<h2>Paraméterek</h2>
+<dl class="param">
+<dt><code>family</code></dt>
+<dd>
+Betűkészlet családja. A név tetszés szerint választható. Ha ez egy standard betűkészlet családnév, akkor az új felülírja
+a már meglévő betűkészletet.
+</dd>
+<dt><code>style</code></dt>
+<dd>
+Betűstílus. Lehetséges értékek (nem betűméret érzékenyek):
+<ul>
+<li>üres string: szokásos</li>
+<li><code>B</code>: félkövér</li>
+<li><code>I</code>: dőlt</li>
+<li><code>BI</code> vagy <code>IB</code>: félkövér és dőlt</li>
+</ul>
+Az alapérték a szokásos.
+</dd>
+<dt><code>file</code></dt>
+<dd>
+Betűkészlet definíciós fájl.
+<br>
+Alapértelmezettként neve a betű családjából és stílusából tevődik össze, kisbetűsen, szóköz nélkül.
+</dd>
+</dl>
+<h2>Példa</h2>
+<div class="doc-source">
+<pre><code>$pdf-&gt;AddFont('Comic','I');</code></pre>
+</div>
+Ez megegyezik ezzel:
+<div class="doc-source">
+<pre><code>$pdf-&gt;AddFont('Comic','I','comici.php');</code></pre>
+</div>
+<h2>Lásd még</h2>
+<a href="setfont.htm">SetFont</a>
+<hr style="margin-top:1.5em">
+<div style="text-align:center"><a href="index.htm">Index</a></div>
+</body>
+</html>

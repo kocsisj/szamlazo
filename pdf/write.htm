@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Write</title>
+<link type="text/css" rel="stylesheet" href="fpdf.css">
+</head>
+<body>
+<h1>Write</h1>
+<code>Write(<b>float</b> h, <b>string</b> txt [, <b>mixed</b> link])</code>
+<h2>Leírás</h2>
+A függvény az aktuális pozíciótól ír ki stringet. Ha a szöveg eléri a jobb margót vagy a \n
+karakter kombinációt, sortörés következik be, majd a szöveg a bal margótól folytatódik tovább.
+Amikor a függvény véget ér, az aktuális pozíció a szöveg végén marad.
+<br>
+Szövegbeli hivatkozás elhelyezése engedélyezett.
+<h2>Paraméterek</h2>
+<dl class="param">
+<dt><code>h</code></dt>
+<dd>
+Sor magassága.
+</dd>
+<dt><code>txt</code></dt>
+<dd>
+Megjelenítendő string.
+</dd>
+<dt><code>link</code></dt>
+<dd>
+URL vagy azonosító, amellyel az AddLink() visszatér.
+</dd>
+</dl>
+<h2>Példa</h2>
+<div class="doc-source">
+<pre><code>// Arial, általános, 14 pt-os betűtípus beállítása
+$pdf-&gt;SetFont('Arial','',14);
+$pdf-&gt;Write(5,'Visit ');
+// Majd illesszünk be egy kék aláhúzott hivatkozást
+$pdf-&gt;SetTextColor(0,0,255);
+$pdf-&gt;SetFont('','U');
+$pdf-&gt;Write(5,'www.fpdf.org','http://www.fpdf.org');</code></pre>
+</div>
+<h2>Lásd még</h2>
+<a href="setfont.htm">SetFont</a>,
+<a href="settextcolor.htm">SetTextColor</a>,
+<a href="addlink.htm">AddLink</a>,
+<a href="multicell.htm">MultiCell</a>,
+<a href="setautopagebreak.htm">SetAutoPageBreak</a>
+<hr style="margin-top:1.5em">
+<div style="text-align:center"><a href="index.htm">Index</a></div>
+</body>
+</html>

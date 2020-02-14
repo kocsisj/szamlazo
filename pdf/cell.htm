@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Cell</title>
+<link type="text/css" rel="stylesheet" href="fpdf.css">
+</head>
+<body>
+<h1>Cell</h1>
+<code>Cell(<b>float</b> w [, <b>float</b> h [, <b>string</b> txt [, <b>mixed</b> border [, <b>int</b> ln [, <b>string</b> align [, <b>boolean</b> fill [, <b>mixed</b> link]]]]]]])</code>
+<h2>Leírás</h2>
+Megjelenít egy cellát (téglalapot) meghatározott kerettel, háttérszínnel és karakterekkel.
+A cella bal felső sarka a viszonyítási alap a cella pozíciójának. A szöveg lehet igazított (
+balra, jobbra, középre). A függvényhívás után, a kurzor jobbra helyeződik, vagy a szöveg
+vonalába. A szövegbéli hivatkozás elhelyezése lehetséges.
+<br>
+Ha az automatikus oldaltörés engedélyezett és a cella a limitet túllépi, az oldaltörés
+bekövetkezik a megjelenítés előtt.
+<h2>Paraméterek</h2>
+<dl class="param">
+<dt><code>w</code></dt>
+<dd>
+Cella szélesség. Ha <code>0</code>, a cella a jobb margóig ér.
+</dd>
+<dt><code>h</code></dt>
+<dd>
+Cella magasság.<br>
+Alapérték: <code>0</code>.
+</dd>
+<dt><code>txt</code></dt>
+<dd>
+Megjelenítendő string.<br>
+Alapérték: üres string.
+</dd>
+<dt><code>border</code></dt>
+<dd>
+A cella körüli keretek megadására szolgál. Értéke lehet akár szám:
+<ul>
+<li><code>0</code>: nincs keret</li>
+<li><code>1</code>: van keret</li>
+</ul>
+vagy egy sting amely a következő karaktereket tartalmazhatja (bármilyen sorrendben):
+<ul>
+<li><code>L</code>: bal</li>
+<li><code>T</code>: felső</li>
+<li><code>R</code>: jobb</li>
+<li><code>B</code>: alsó</li>
+</ul>
+Alapérték: <code>0</code>.
+</dd>
+<dt><code>ln</code></dt>
+<dd>
+A kurzor pozíciójának megadására szolgál a függvény hívása után. Lehetséges értékek:
+<ul>
+<li><code>0</code>: jobbra</li>
+<li><code>1</code>: a következő sor elejére</li>
+<li><code>2</code>: alulra</li>
+</ul>
+<code>1</code> megadása egyenlő a <code>0</code> megadása utáni Ln() hívással.<br>
+Alapérték: <code>0</code>
+</dd>
+<dt><code>align</code></dt>
+<dd>
+
+Középre igazítja vagy igazítja a szöveget. Lehetséges értékek:
+<ul>
+<li><code>L</code> vagy üresen hagyva: balra igazítás (alapértelmezett)</li>
+<li><code>C</code>: középre igazítás</li>
+<li><code>R</code>: jobbra igazítás</li>
+</ul>
+</dd>
+<dt><code>fill</code></dt>
+<dd>
+Cella háttér megadására szolgál, lehet színes (<code>true</code>) vagy átlátszó (<code>false</code>).<br>
+Alapérték: <code>false</code>.
+</dd>
+<dt><code>link</code></dt>
+<dd>
+URL vagy azonosító amellyel az AddLink() visszatért.
+</dd>
+</dl>
+<h2>Példa</h2>
+<div class="doc-source">
+<pre><code>// Betűtípus beállítás
+$pdf-&gt;SetFont('Arial','B',16);
+// 8 cm-rel jobbra
+$pdf-&gt;Cell(80);
+// Középre igazított szöveg, egy bekeretezett, 20*10 mm-es cellában, majd sortörés
+$pdf-&gt;Cell(20,10,'Title',1,1,'C');</code></pre>
+</div>
+<h2>Lásd még</h2>
+<a href="setfont.htm">SetFont</a>,
+<a href="setdrawcolor.htm">SetDrawColor</a>,
+<a href="setfillcolor.htm">SetFillColor</a>,
+<a href="settextcolor.htm">SetTextColor</a>,
+<a href="setlinewidth.htm">SetLineWidth</a>,
+<a href="addlink.htm">AddLink</a>,
+<a href="ln.htm">Ln</a>,
+<a href="multicell.htm">MultiCell</a>,
+<a href="write.htm">Write</a>,
+<a href="setautopagebreak.htm">SetAutoPageBreak</a>
+<hr style="margin-top:1.5em">
+<div style="text-align:center"><a href="index.htm">Index</a></div>
+</body>
+</html>

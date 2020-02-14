@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Image</title>
+<link type="text/css" rel="stylesheet" href="fpdf.css">
+</head>
+<body>
+<h1>Image</h1>
+<code>Image(<b>string</b> file [, <b>float</b> x [, <b>float</b> y [, <b>float</b> w [, <b>float</b> h [, <b>string</b> type [, <b>mixed</b> link]]]]]])</code>
+<h2>Leírás</h2>
+Beszúr egy képet. A megjelenítendő mérete különböző módokon adható meg:
+<ul>
+<li>meghatározott szélesség és magasság (a felhasználó mértékegységében kifejezve vagy dpi-ben)</li>
+<li>egyik érték megadásával, ilyenkor a másik érték automatikus meghatározásra kerül és az eredeti képarány megmarad</li>
+<li>nincs megadva egyik érték sem, ebben az esetben a kép 96 dpi felbontásban jelenik meg</li>
+</ul>
+Támogatott formátumok: JPEG, PNG és GIF. A GD kiterjesztés szükséges a GIF-hez.
+<br>
+<br>
+A JPEG-nek az összes sajátossága elérhető:
+<ul>
+<li>szürkeárnyalatos</li>
+<li>true colors (24 bit)</li>
+<li>CMYK (32 bit)</li>
+</ul>
+PNG-nél engedélyezett:
+<ul>
+<li>szürkeárnyalatos legfeljebb 8 bit</li>
+<li>indexed colors</li>
+<li>true colors (24 bit)</li>
+</ul>
+Gifeknél, amennyiben animált gif, csak az első képkocka jelenik meg.<br>
+<br>
+Átlátszóság (transzparencia) támogatva.<br>
+<br>
+A formátum megadható egyénileg vagy meghatározásra kerül a kiterjesztésből.<br>
+<br>
+Hivatkozás megadása a képre szintén lehetséges.<br>
+<br>
+Megjegyzés: ha egy kép többször is be van illesztve, csak egy másolata lesz beleágyazva a dokumentumba.
+<h2>Paraméterek</h2>
+<dl class="param">
+<dt><code>file</code></dt>
+<dd>
+Elérési út vagy URL a képhez.
+</dd>
+<dt><code>x</code></dt>
+<dd>
+A bal felső sarok x koordinátája. Ha nincs megadva vagy értéke <code>null</code> -al egyenlő, az aktuális
+x pozíció kerül használatra.
+</dd>
+<dt><code>y</code></dt>
+<dd>
+A bal felső sarok y koordinátája. Ha nincs megadva vagy értéke <code>null</code> -al egyenlő, az aktuális
+y pozíció kerül használatra. Amennyiben szükséges oldaltörés, akkor bekövetkezik (illetve csak akkor ha az
+automatikus oldaltörés engedélyezve van), majd a függvény hívás után az aktuális y koordináta a kép aljára
+kerül át.
+</dd>
+<dt><code>w</code></dt>
+<dd>
+A kép szélessége az oldalon. Három eset lehetséges:
+<ul>
+<li>Ha az érték pozitív, megadja a szélességet a felhasználó egységében.</li>
+<li>Ha az érték negatív, a tényleges érték a vízszintes felbontásnak megfelelően, dpi-ben kerül felhasználásra.</li>
+<li>Ha nem beállított vagy nullával egyenlő, automatikusan kerül kiszámításra</li>
+</ul>
+</dd>
+<dt><code>h</code></dt>
+<dd>
+A kép magassága az oldalon. Három eset lehetséges:
+<ul>
+<li>Ha az érték pozitív, megadja a magasságot a felhasználó egységében.</li>
+<li>Ha az érték negatív, a tényleges érték a függőleges felbontásnak megfelelően, dpi-ben kerül felhasználásra.</li>
+<li>Ha nem beállított vagy nullával egyenlő, automatikusan kerül kiszámításra</li>
+</ul>
+</dd>
+<dt><code>type</code></dt>
+<dd>
+Kép formátum. Lehetséges értékek (nem betűméret érzékeny): <code>JPG</code>, <code>JPEG</code>, <code>PNG</code> és <code>GIF</code>.
+Ha nincs megadva, a kiterjesztésből kerül meghatározásra.
+</dd>
+<dt><code>link</code></dt>
+<dd>
+URL vagy azonosító, amivel az AddLink() tér vissza.
+</dd>
+</dl>
+<h2>Példa</h2>
+<div class="doc-source">
+<pre><code>// Beilleszt egy logót a bal felső saroktól 300 dpi-re (vízszintesen)
+$pdf-&gt;Image('logo.png',10,10,-300);
+// Beilleszt egy dinamikus képet egy URL-ből
+$pdf-&gt;Image('http://chart.googleapis.com/chart?cht=p3&amp;chd=t:60,40&amp;chs=250x100&amp;chl=Hello|World',60,30,90,0,'PNG');</code></pre>
+</div>
+<h2>Lásd még</h2>
+<a href="addlink.htm">AddLink</a>
+<hr style="margin-top:1.5em">
+<div style="text-align:center"><a href="index.htm">Index</a></div>
+</body>
+</html>

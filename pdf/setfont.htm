@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>SetFont</title>
+<link type="text/css" rel="stylesheet" href="fpdf.css">
+</head>
+<body>
+<h1>SetFont</h1>
+<code>SetFont(<b>string</b> family [, <b>string</b> style [, <b>float</b> size]])</code>
+<h2>Leírás</h2>
+Beállítja a karakterek megjelenítésére használt betűtípust. Ezt a műveletet kötelező
+meghívni legalább egyszer egy szöveg megjelenítése előtt.<br>
+A betűtípus lehet egy alapértelmezett vagy egy az AddFont() által hozzáadott típus. Az alapértelmezett
+betűtípusok Windows cp1252 (Nyugat Európai) kódolást használnak.
+<br>
+A művelet meghívható az első oldal készítése előtt, így a betűtípus lapról lapra megmarad.
+<br>
+Ha változtatni szeretnénk az aktuális betűméretet, hívjuk a SetFontSize() függvényt.
+<br>
+<br>
+<strong>Megjegyzés:</strong>a betűtípus metrikai fájlainak elérhetőknek kell lenniük. Egymás után keresésre kerülnek:
+<ul>
+<li>A <code>FPDF_FONTPATH</code> konstans által definiált könyvtárban (amennyiben megadott)</li>
+<li>A <code>font</code> könyvtárban (amennyiben létezik), ami az <code>fpdf.php</code> -val egy könyvtárban van elhelyezve</li>
+<li>A könyvtárakban, melyek elérhetőek az <code>include()</code> hívásán keresztül</li>
+</ul>
+Példa a <code>FPDF_FONTPATH</code> definiálására:
+<div class="doc-source">
+<pre><code>define('FPDF_FONTPATH','/home/www/font');
+require('fpdf.php');</code></pre>
+</div>
+Amennyiben a hivatkozás által megadott betűtípus nem található, a folyamat "Could not include
+font definition file" - "Nem sikerült a betűkészlet beillesztése" hibával leáll.
+<h2>Paraméterek</h2>
+<dl class="param">
+<dt><code>family</code></dt>
+<dd>
+Betűtípuscsalád. Ez lehet egy AddFont() által megadott név vagy egy az általános betűcsaládok közül
+(nem betűméret érzékeny):
+<ul>
+<li><code>Courier</code> (fix szélességű)</li>
+<li><code>Helvetica</code> vagy <code>Arial</code> (synonymous; sans serif)</li>
+<li><code>Times</code> (serif)</li>
+<li><code>Symbol</code> (szimbólumos)</li>
+<li><code>ZapfDingbats</code> (szimbólumos)</li>
+</ul>
+Itt is lehetséges az értéket üresen hagyni, ebben az esetben az épp alkalmazott betűcsalád kerül
+további alkalmazásra.
+</dd>
+<dt><code>style</code></dt>
+<dd>
+Betűstílus. Lehetséges értékek (nem betűméret érzékeny):
+<ul>
+<li>üres string: általános</li>
+<li><code>B</code>: félkövér</li>
+<li><code>I</code>: dőlt</li>
+<li><code>U</code>: aláhúzott</li>
+</ul>
+vagy ezek bármilyen kombinációja.<br>
+Alapérték az általános.<br>
+Félkövér és dőlt stílusok nem elérhetőek a <code>Symbol</code> és <code>ZapfDingbats</code>
+betűtípusoknál.
+</dd>
+<dt><code>size</code></dt>
+<dd>
+Betűméret pt-ben megadva.
+<br>
+Az alapérték az aktuális mérettel egyenlő, de ha nem volt még megadva a dokumentum eleje óta
+betűméret, akkor 12 pt.
+</dd>
+</dl>
+<h2>Példa</h2>
+<div class="doc-source">
+<pre><code>// Times New Roman, általános, 12 pt
+$pdf-&gt;SetFont('Times');
+// Arial, félkövér, 14 pt
+$pdf-&gt;SetFont('Arial','B',14);
+// Törli a félkövér stílust
+$pdf-&gt;SetFont('');
+// Times New Roman, félkövér, dőlt, aláhúzott és 14 pt (az előbb megadott méret kerül tovább görgetésre)
+$pdf-&gt;SetFont('Times','BIU');</code></pre>
+</div>
+<h2>Lásd még</h2>
+<a href="addfont.htm">AddFont</a>,
+<a href="setfontsize.htm">SetFontSize</a>,
+<a href="cell.htm">Cell</a>,
+<a href="multicell.htm">MultiCell</a>,
+<a href="write.htm">Write</a>
+<hr style="margin-top:1.5em">
+<div style="text-align:center"><a href="index.htm">Index</a></div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AcceptPageBreak</title>
+<link type="text/css" rel="stylesheet" href="fpdf.css">
+</head>
+<body>
+<h1>AcceptPageBreak</h1>
+<code><b>boolean</b> AcceptPageBreak()</code>
+<h2>Leírás</h2>
+Amikor oldaltörés válik szükségessé, ez a függvény kerül meghívásra. Az oldaltörés bekövetkezte
+függ a függvény visszatérési értékétől. A visszatérési érték a SetAutoPageBreak() függvény
+által kiválasztottakhoz (kiválasztott módhoz) igazodik.
+<br>
+A függvény automatikusan meghívásra kerül, ezért direkt meghívása nem szükséges.
+<h2>Példa</h2>
+A függvény lefut egy származtatott osztályon, hogy létrehozza a 3 oszlopos elrendezést.
+<div class="doc-source">
+<pre><code>class PDF extends FPDF
+{
+var $col = 0;
+
+function SetCol($col)
+{
+    // Oszlop létrehozása
+    $this-&gt;col = $col;
+    $x = 10+$col*65;
+    $this-&gt;SetLeftMargin($x);
+    $this-&gt;SetX($x);
+}
+
+function AcceptPageBreak()
+{
+    if($this-&gt;col&lt;2)
+    {
+        // Ugrás a következő oszlopra
+        $this-&gt;SetCol($this-&gt;col+1);
+        $this-&gt;SetY(10);
+        return false;
+    }
+    else
+    {
+        // Visszaugrás az első oszlopra és az oldaltörés létrehozása
+        $this-&gt;SetCol(0);
+        return true;
+    }
+}
+}
+
+$pdf = new PDF();
+$pdf-&gt;AddPage();
+$pdf-&gt;SetFont('Arial','',12);
+for($i=1;$i&lt;=300;$i++)
+    $pdf-&gt;Cell(0,5,"Line $i",0,1);
+$pdf-&gt;Output();</code></pre>
+</div>
+<h2>Lásd még</h2>
+<a href="setautopagebreak.htm">SetAutoPageBreak</a>
+<hr style="margin-top:1.5em">
+<div style="text-align:center"><a href="index.htm">Index</a></div>
+</body>
+</html>
