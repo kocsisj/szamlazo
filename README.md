@@ -20,11 +20,11 @@ Jelszó:         1
 DATABASE/localhost.sql
 
 ## Felhasználói leírás: 
-[kszamla_felhasznaloi_utmutato.pdf](https://github.com/kocsisj/szamlazoprogram/blob/master/felhasznaloi_utmutato/kszamla_felhasznaloi_utmutato.pdf)
+[kszamla_felhasznaloi_utmutato.pdf](https://github.com/kocsisj/szamlazo/blob/master/felhasznaloi_utmutato/kszamla_felhasznaloi_utmutato.pdf)
 
 ## Képek a programból: 
-![kep1](https://github.com/kocsisj/szamlazoprogram/blob/master/felhasznaloi_utmutato/kep1.JPG)
+![kep1](https://github.com/kocsisj/szamlazo/blob/master/felhasznaloi_utmutato/kep1.JPG)
 
-![kep2](https://github.com/kocsisj/szamlazoprogram/blob/master/felhasznaloi_utmutato/kep2.JPG)
+![kep2](https://github.com/kocsisj/szamlazo/blob/master/felhasznaloi_utmutato/kep2.JPG)
 
-![kep3](https://github.com/kocsisj/szamlazoprogram/blob/master/felhasznaloi_utmutato/kep3.JPG)
+![kep3](https://github.com/kocsisj/szamlazo/blob/master/felhasznaloi_utmutato/kep3.JPG)
