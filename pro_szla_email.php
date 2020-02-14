@@ -39,27 +39,21 @@ if ($email_domain=="gmail.com") {
 	$mail->Port = 465;
 
 	$mail->SMTPAuth = true;                            // SMTP autentikáció bekapcs  
-	$mail->Username = "szamla@kszamla.hu";                         // SMTP felhasználó  
-	$mail->Password = "Hptig6S#HjWL";            // SMTP jelszó 
+	$mail->Username = "szamla@kxxxxx.hu";                         // SMTP felhasználó  
+	$mail->Password = "xxxxxx";            // SMTP jelszó 
 }
 
 $mail->SetLanguage("hu", "php_mailer/language");    //karakterkódolás hogy legyen ekezetes bető
 $mail->CharSet   = "utf-8";							 //karakterkódolás hogy legyen ekezetes bető
 
-$mail->From     = "szamla@kszamla.hu";                // Feladó e-mail címe  
-//$mail->FromName = "kszamla";     // Feladó neve  
-$mail->FromName = utf8_encode($felhasznalo_nev);
-//$mail->AddAddress("jozsef.kocsis@pontcom.com","Kocsis Jozsef");   // Címzett és neve  
+$mail->From     = "szamla@xxxxx.hu";                // Feladó e-mail címe  
+
+$mail->FromName = utf8_encode($felhasznalo_nev); 
 $mail->AddAddress($vevo_email,$vevo_nev);   // Címzett és neve  
-//$mail->AddAddress("ellen@site.com");               // Még egy címzett 
-// $mail->AddBCC("jozsef.kocsis@pontcom.com","Kocsis Jozsef"); 
-$mail->AddReplyTo("szamla@kszamla.hu","no-reply");  // Válaszlevél ide  
+$mail->AddReplyTo("szamla@xxxxx.hu","no-reply");  // Válaszlevél ide  
 
 $mail->WordWrap = 50;                              // Sortörés állítása  
-//$mail->AddAttachment($directory."/KJ-2016-000133-ppp.pdf"); 
 $mail->AddAttachment($directory."/".$attachement); 
-//$mail->AddAttachment("/var/tmp/file.tar.gz");      // Csatolás  
-//$mail->AddAttachment("/tmp/image.jpg", "new.jpg"); // Csatolás más néven  
 $mail->IsHTML(true);                               // Küldés HTML-ként  
   
 $mail->Subject = ("Értesítés ". $szla_sorszam. " sorszámú díjbekérö kiállításról");            // A levél tárgya  
