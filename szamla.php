@@ -346,13 +346,13 @@ include('szla_havi_total.php');
 	</body>
 	<div id="lablec_szelesseg">
 			<small>
-			<a href=https://kszamla.hu/felhasznaloi_utmutato/kszamla_felhasznaloi_utmutato.pdf target=_blank>Felhasználói kézikönyv</a>
+			<a href=https://xxxxxx.hu/felhasznaloi_utmutato/kszamla_felhasznaloi_utmutato.pdf target=_blank>Felhasználói kézikönyv</a>
 			&nbsp;&nbsp;&nbsp;
-			<a href=https://kszamla.hu/aszf target=_blank>ÁSZF</a>
+			<a href=https://xxxxx.hu/aszf target=_blank>ÁSZF</a>
 			&nbsp;&nbsp;&nbsp;
-			<a href=https://kszamla.hu/adatvedelem target=_blank>Adatvédelmi nyilatkozat</a>
+			<a href=https://xxxxxx.hu/adatvedelem target=_blank>Adatvédelmi nyilatkozat</a>
 			&nbsp;&nbsp;&nbsp;
-			<a href=https://kszamla.hu/kapcsolat target=_blank>Kapcsolat</a>
+			<a href=https://xxxxx.hu/kapcsolat target=_blank>Kapcsolat</a>
 			<br>
 			<img src='pic/B13175_kszamla_01_k.png' height=30px</img>
     </div>
