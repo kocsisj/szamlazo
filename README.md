@@ -7,14 +7,6 @@ Esetleg hozzárakhatja a hiányzó kódot a NAV online számlaküldéshez
 
 !!! A kezdő oldal a szamla.php (nem index.php), majd átírod ha akarod. :D
 
-## Demó itt elérhető:
-http://jozko.com/szamla/szamla.php
-
-
-| Felhasználónév:      | proba      |
-|-------------|-------------|
-| Jelszó:  | 1 |
-
 ## Adatbázis: 
 DATABASE/localhost.sql
 
@@ -26,7 +18,6 @@ DATABASE/localhost.sql
 
    Itt kell beállítani az adatbázis kapcsolat paramétereit
    
-
 - szla_email.php
 - pro_szla_email.php
 - registration.php
